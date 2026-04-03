@@ -43,7 +43,6 @@ python main.py
 - [x] Phase 7 — React Frontend Dashboard
 - [ ] Phase 8 — Google Cloud Deployment
 
-<img width="1891" height="886" alt="image" src="https://github.com/user-attachments/assets/1edfd9f7-2447-40c6-b8f4-29bc15f2eb60" />
 
 ## 🖥️ UI Screenshot
 ![Multi-Agent System Dashboard](https://github.com/user-attachments/assets/1edfd9f7-2447-40c6-b8f4-29bc15f2eb60)
