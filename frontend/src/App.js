@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "https://multi-agent-system-production-245b.up.railway.app";
 
 // Agent status component
 const AgentCard = ({ icon, name, status }) => {
