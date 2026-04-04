@@ -52,37 +52,23 @@ def health_check():
 
 @app.post("/run-pipeline", response_model=PipelineResponse)
 def run_pipeline(request: PipelineRequest):
-    
     if not request.query.strip():
-        raise HTTPException(
-            status_code=400,
-            detail="Query cannot be empty!"
-        )
-    
-    if len(request.query) > 500:
-        raise HTTPException(
-            status_code=400,
-            detail="Query too long! Max 500 characters."
-        )
-    
+        raise HTTPException(status_code=400, detail="Query cannot be empty!")
     try:
-        print(f"\n🌐 API Request received: {request.query}")
-        
         start_time = time.time()
         output = run_multi_agent_pipeline(request.query)
         end_time = time.time()
-        
-        time_taken = round(end_time - start_time, 2)
-        
         return PipelineResponse(
             status="success",
             query=request.query,
             output=output,
-            time_taken=time_taken
+            time_taken=round(end_time - start_time, 2)
         )
-        
     except Exception as e:
-        raise HTTPException(
-            status_code=500,
-            detail=f"Pipeline error: {str(e)}"
-        )
+        error_msg = str(e)
+        if "rate_limit" in error_msg.lower() or "429" in error_msg:
+            raise HTTPException(
+                status_code=429,
+                detail="Rate limit exceeded! Please wait 1-2 minutes and try again."
+            )
+        raise HTTPException(status_code=500, detail=f"Pipeline error: {error_msg}")
