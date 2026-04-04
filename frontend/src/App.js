@@ -66,7 +66,7 @@ export default function App() {
 
       setAgentStatus({ researcher: "done", writer: "done", reviewer: "done" });
     } catch (err) {
-      setError("Something went wrong! Make sure the API is running.");
+      setError("Server is waking up... Please wait few seconds and try again! ⏳");
       setAgentStatus({ researcher: "idle", writer: "idle", reviewer: "idle" });
     } finally {
       setLoading(false);
