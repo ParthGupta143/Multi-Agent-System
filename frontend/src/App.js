@@ -84,7 +84,7 @@ export default function App() {
         {/* Header */}
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-white mb-2">
-            🤖 Multi-Agent System
+            🤖 Omni.AI
           </h1>
           <p className="text-gray-400 text-lg">
             AI-powered pipeline — Research → Write → Review
