@@ -51,3 +51,5 @@ python main.py
 - Frontend: localhost:3000
 - API Docs: localhost:8000/docs
 
+## 🌐 Live Demo
+👉 [Multi-Agent System](https://multi-agent-system-froc8514s-parthgupta143s-projects.vercel.app)
