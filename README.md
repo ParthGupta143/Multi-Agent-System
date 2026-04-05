@@ -45,7 +45,7 @@ python main.py
 
 
 ## 🖥️ UI Screenshot
-![Multi-Agent System Dashboard](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/860c36c5-9810-4c54-ac8b-7a550df1d10a" />
+![Multi-Agent System Dashboard](https://github.com/user-attachments/assets/860c36c5-9810-4c54-ac8b-7a550df1d10a>
 )
 
 ## 🚀 Live Demo
