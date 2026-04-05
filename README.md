@@ -1,4 +1,4 @@
-# 🤖 Multi-Agent Task Automation System
+# 🤖 Multi-Agent Task Automation System: OMNI.AI
 
 An AI-powered multi-agent system where specialized agents 
 collaborate autonomously to research, write, and review content.
@@ -45,11 +45,12 @@ python main.py
 
 
 ## 🖥️ UI Screenshot
-![Multi-Agent System Dashboard](https://github.com/user-attachments/assets/1edfd9f7-2447-40c6-b8f4-29bc15f2eb60)
+![Multi-Agent System Dashboard](<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/860c36c5-9810-4c54-ac8b-7a550df1d10a" />
+)
 
 ## 🚀 Live Demo
 - Frontend: localhost:3000
 - API Docs: localhost:8000/docs
 
 ## 🌐 Live Demo
-👉 [Multi-Agent System](https://multi-agent-system-froc8514s-parthgupta143s-projects.vercel.app)
+👉 [OMNI.AI](https://multi-agent-system-iota.vercel.app/)
