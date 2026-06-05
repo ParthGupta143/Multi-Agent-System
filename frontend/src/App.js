@@ -1,7 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API_URL = "https://multi-agent-system-production-245b.up.railway.app";
+// const API_URL = "https://multi-agent-system-production-245b.up.railway.app";
+const API_URL = "https://omni-ai-backend-5rjq.onrender.com";
 
 // Agent status component
 const AgentCard = ({ icon, name, status }) => {
@@ -84,7 +85,7 @@ export default function App() {
         {/* Header */}
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-white mb-2">
-            🤖 Omni.AI
+            🤖 Omni.Ai
           </h1>
           <p className="text-gray-400 text-lg">
             AI-powered pipeline — Research → Write → Review
